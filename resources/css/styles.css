@@ -1,0 +1,265 @@
+*{
+    font-family: 'Dhurjati', sans-serif;
+    color: azure;
+}
+
+html{
+    background-color: black;
+}
+
+img{
+    max-height: 15rem;
+    max-width: 11rem;
+    border-radius: 15px;
+}
+
+body{
+    display: grid;
+    padding: .3rem;
+    /* width: 1200px; */
+    /* min-height: 100vh; */
+    /* place-content: center; */
+}
+
+/* Utilities */
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid-col-span-all{
+    grid-column: span 5;
+}
+
+/* Main Styles */
+/* ALl PAGES */
+main{
+    background-image: url('../img/bg_tokers.jpg');
+    background-attachment: fixed;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "topper topper topper topper topper"
+    "mission mission mission mission mission"
+    "PR PR PR PR PR"
+    "product product product product product"
+    "footer footer footer footer footer";
+}
+
+.topper{
+    grid-area: topper;
+    background-image: linear-gradient(to right, rgb(247, 239, 239) , rgb(8, 248, 28));
+    flex-wrap: wrap;
+}
+
+/* mission placement below .mission*/
+/* Product Review Div placement below .section-title */
+/* Products placement below .products */
+
+.banner{
+    font-family: 'Rubik Bubbles';
+    font-size: 4rem;
+    margin: auto;
+}
+
+.nav-div{
+    justify-items: center;
+    margin: auto;
+}
+
+.nav-div a{
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 2rem;
+}
+
+.nav-div:hover a:hover{
+    text-decoration: underline;
+    color: rgb(165, 95, 95);
+    font-family: 'Dhurjati', sans-serif;
+}
+
+/* END ALL PAGES */
+
+/* START LANDING PAGE */
+
+.mission{
+    background-color: rgba(7, 7, 6, 0.459);
+    /* background-image: linear-gradient(to right, rgba(245, 161, 17, 0.575) , rgba(8, 248, 28, 0.575)); */
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    grid-area: mission;
+    padding: 1rem 0px;
+}
+
+.section-title{
+    background-color: rgba(7, 7, 6, 0.459);
+    border-top: 2px solid rgba(8, 248, 28, 0.452);
+    border-bottom: 3px solid rgba(8, 248, 28, 0.452);
+    width: 100%;
+    font-family: 'Rubik Bubbles';
+    font-size: 4rem;
+    text-align: center;
+    grid-area: PR;
+}
+
+.products{
+    flex-wrap: wrap;
+    place-content: center;
+    grid-area: product;
+}
+
+.product-card{
+    flex-direction: column;
+    gap: 0px;
+    width: 12rem;
+    height: 18rem;
+    background-color: rgba(7, 7, 6, 0.459);
+    /* background-image: linear-gradient(to right, rgba(245, 161, 17, 0.452) , rgba(8, 248, 28, 0.452)); */
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-card > *{
+    justify-self: center;
+}
+
+.product-card:hover{
+    background-color: rgba(1, 255, 1, 0.459);
+    box-shadow: 0px 0px 45px 1px rgba(0,255,0,1);
+    transform: scale(1.20);
+    
+}
+
+.product-card > *:hover{
+    color: black;
+}
+
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* END LANDING PAGE */
+
+/* START ALL PAGES */
+
+footer{
+    grid-area: footer;
+    align-items: center;
+    justify-items: center;
+    min-height: 75px;
+    background-image: linear-gradient(to right, rgba(245, 161, 17, 0.452) , rgba(8, 248, 28, 0.452));
+}
+
+footer > * {
+    flex: 1;
+    text-align: center;
+}
+
+/* END ALL PAGES */
+
+/* ABOUT PAGE */
+
+.about{
+    background-color: rgba(7, 7, 6, 0.459);
+    font-size: 2rem;
+    grid-column: 2 / 5;
+    padding: 1rem;
+}
+
+.people{
+    flex-direction: row;
+    grid-row: 3;
+    grid-column: 2 / 5;
+}
+
+.people-card{
+    flex-direction: column;
+    gap: 0px;
+    width: 12rem;
+    height: 18rem;
+    background-color: rgba(7, 7, 6, 0.459);
+    /* background-image: linear-gradient(to right, rgba(245, 161, 17, 0.452) , rgba(8, 248, 28, 0.452)); */
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.people-card:hover{
+    background-color: rgba(1, 255, 1, 0.459);
+    box-shadow: 0px 0px 45px 1px rgba(0,255,0,1);
+    transform: scale(1.02);
+}
+
+/* END ABOUT PAGE */
+
+/* LOCATION PAGE */
+
+.loc{
+    background-image: url('../img/bg_tokers.jpg');
+    background-attachment: fixed;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "topper topper topper topper topper"
+    "......  maps   maps   maps  ......"
+     "footer footer footer footer footer";
+}
+
+.maps{
+    grid-area: maps;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    max-height: 24rem;
+    max-width: 24rem;
+}
+
+.map-card{
+    flex-direction: column;
+    gap: 0px;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(7, 7, 6, 0.459);
+    /* background-image: linear-gradient(to right, rgba(245, 161, 17, 0.452) , rgba(8, 248, 28, 0.452)); */
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.map-card:hover{
+    background-color: rgba(1, 255, 1, 0.459);
+    box-shadow: 0px 0px 45px 1px rgba(0,255,0,1);
+    transform: scale(1.02);
+}
+
+/* END LOCATION PAGE */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1000px) {
+    .maps{
+        flex-wrap: wrap;
+    }
+
+    .banner{
+        font-size: 2rem;
+    }
+}
+
+/* RESPONSIVE END */
