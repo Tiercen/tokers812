@@ -19,7 +19,7 @@ body{
     background-image: url('../img/bg_tokers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: 100% 100%;
     /* width: 1200px; */
     /* min-height: 100vh; */
     /* place-content: center; */
@@ -208,10 +208,6 @@ footer > * {
 /* LOCATION PAGE */
 
 .loc{
-    /* background-image: url('../img/bg_tokers.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: fill; */
     display: grid;
     flex-wrap: wrap;
     gap: 1.5rem;
