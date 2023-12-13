@@ -16,6 +16,10 @@ img{
 body{
     display: grid;
     padding: .3rem;
+    background-image: url('../img/bg_tokers.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: fill;
     /* width: 1200px; */
     /* min-height: 100vh; */
     /* place-content: center; */
@@ -35,10 +39,6 @@ body{
 /* Main Styles */
 /* ALl PAGES */
 main{
-    background-image: url('../img/bg_tokers.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     display: grid;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -208,10 +208,10 @@ footer > * {
 /* LOCATION PAGE */
 
 .loc{
-    background-image: url('../img/bg_tokers.jpg');
+    /* background-image: url('../img/bg_tokers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: fill; */
     display: grid;
     flex-wrap: wrap;
     gap: 1.5rem;
