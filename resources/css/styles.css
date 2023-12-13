@@ -38,7 +38,7 @@ main{
     background-image: url('../img/bg_tokers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: 100% 100%;
     display: grid;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -211,7 +211,7 @@ footer > * {
     background-image: url('../img/bg_tokers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: 100% 100%;
     display: grid;
     flex-wrap: wrap;
     gap: 1.5rem;
